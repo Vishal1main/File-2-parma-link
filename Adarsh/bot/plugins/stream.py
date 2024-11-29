@@ -51,7 +51,7 @@ async def private_receive_handler(c: Client, m: Message):
             if user.status == "kicked":
                 await c.send_message(
                     chat_id=m.chat.id,
-                    text="You are banned!\n\n  Contact Developer [Rahul](https://telegram.me/CodeXBro) he will help you.",
+                    text="You are banned!\n\n  Contact Developer [Tᴍʀ ᴀᴅᴍɪɴ™](https://t.me/TMR_DEVELOPER) he will help you.",
                     disable_web_page_preview=True
                 )
                 return 
@@ -72,7 +72,7 @@ async def private_receive_handler(c: Client, m: Message):
             await m.reply_text(e)
             await c.send_message(
                 chat_id=m.chat.id,
-                text="sᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ ᴡʀᴏɴɢ. ᴄᴏɴᴛᴀᴄᴛ ᴍʏ [ʙᴏss](https://telegram.me/CodeXBro)",
+                text="sᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ ᴡʀᴏɴɢ. ᴄᴏɴᴛᴀᴄᴛ ᴍʏ [ʙᴏss](https://t.me/TMR_DEVELOPER)",
                 disable_web_page_preview=True
             )
             return
@@ -103,9 +103,9 @@ async def private_receive_handler(c: Client, m: Message):
 
 <b>📦 ꜰɪʟᴇ sɪᴢᴇ :- </b> <i>{}</i>
 
-<b>⚠️ ᴛʜɪꜱ ʟɪɴᴋ ᴡɪʟʟ ᴇxᴘɪʀᴇ ᴀꜰᴛᴇʀ 𝟷𝟸 ʜᴏᴜʀꜱ</b>
+<b>⚠️ THIS LINK WILL BE NEVER EXPIRE BECAUSE IT'S BLOGSPOT SUPPORT..</b>
 
-<b>❇️  ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : @CodeXBro</b>"""
+<b>❇️  ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : @Tmr_Developer</b>"""
 
         a = await log_msg.reply_text(
             text=f"ʀᴇǫᴜᴇꜱᴛᴇᴅ ʙʏ : [{m.from_user.first_name}](tg://user?id={m.from_user.id})\nUꜱᴇʀ ɪᴅ : {m.from_user.id}\nStream ʟɪɴᴋ : {stream_link}",
