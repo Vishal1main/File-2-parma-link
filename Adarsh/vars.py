@@ -18,7 +18,7 @@ class Var(object):
     MULTI_CLIENT = False
     API_ID = int(getenv('API_ID', '23171051'))
     API_HASH = str(getenv('API_HASH', '10331d5d712364f57ffdd23417f4513c'))
-    PICS = (environ.get('PICS', 'https://envs.sh/jUp.jpg')).split()
+    PICS = (environ.get('PICS', 'https://envs.sh/YnZ.jpg')).split()
     BOT_TOKEN = str(getenv('BOT_TOKEN', '7985605655:AAFV03kRcAVUZyv6cHzJ3adwn9h8YsKrvAg'))
     name = str(getenv('name', 'Tmr_Terabox_Downloader_Bot'))
     SLEEP_THRESHOLD = int(getenv('SLEEP_THRESHOLD', '60'))
