@@ -3,35 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{file_name}}</title>
+    <title>Redirecting...</title>
+    <meta http-equiv="refresh" content="3; url=https://your-blogger-site.com/streaming-page?file_url={{file_url}}&file_name={{file_name}}&file_size={{file_size}}">
     <link rel="icon" href="https://i.ibb.co/Hh4kF2b/icon.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css">
 </head>
 <body>
-    <div class="container mx-auto text-center py-10">
-        <h1 class="text-3xl font-bold mb-5">TMR Player</h1>
-        <p class="mb-4">Click the button below to stream the video on our Blogger site.</p>
-
-        <!-- Redirect Button -->
-        <button class="bg-blue-500 text-white px-4 py-2 rounded" onclick="redirectToBlogger()">
-            Stream Video
-        </button>
-
-        <!-- JavaScript to handle redirection -->
-        <script>
-            function redirectToBlogger() {
-                // Replace with your Blogger streaming page URL
-                const bloggerUrl = "https://tmrfileshub.blogspot.com/2024/12/video-streaming-body-font-family.html";
-                
-                // Append query parameters for video details
-                const fileUrl = encodeURIComponent("{{file_url}}");
-                const fileName = encodeURIComponent("{{file_name}}");
-                const fileSize = encodeURIComponent("{{file_size}}");
-
-                // Redirect with video details
-                window.location.href = `${bloggerUrl}?fileUrl=${fileUrl}&fileName=${fileName}&fileSize=${fileSize}`;
-            }
-        </script>
-    </div>
+    <center>
+        <h2>Redirecting you to the streaming page...</h2>
+        <p>If you're not redirected, <a href="https://your-blogger-site.com/streaming-page?file_url={{file_url}}&file_name={{file_name}}&file_size={{file_size}}">click here</a>.</p>
+    </center>
 </body>
 </html>
