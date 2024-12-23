@@ -4,13 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redirecting...</title>
-    <meta http-equiv="refresh" content="3; url=https://tmrfileshub.blogspot.com/2024/12/video-streaming-body-font-family.html?file_url={{file_url}}&file_name={{file_name}}&file_size={{file_size}}">
     <link rel="icon" href="https://i.ibb.co/Hh4kF2b/icon.png" type="image/x-icon">
+    <script>
+        // Ensure your data is correctly available
+        var fileUrl = "{{file_url}}"; // Replace this with your dynamic URL
+        var fileName = "{{file_name}}"; // Replace this with the dynamic file name
+        var fileSize = "{{file_size}}"; // Replace this with the dynamic file size
+
+        // Construct the redirect URL
+        var redirectUrl = "https://your-blogger-site.com/streaming-page?file_url=" + encodeURIComponent(fileUrl) + "&file_name=" + encodeURIComponent(fileName) + "&file_size=" + encodeURIComponent(fileSize);
+
+        // Redirect after 3 seconds
+        setTimeout(function() {
+            window.location.href = redirectUrl;
+        }, 3000);
+    </script>
 </head>
 <body>
     <center>
         <h2>Redirecting you to the streaming page...</h2>
-        <p>If you're not redirected, <a href="https://your-blogger-site.com/streaming-page?file_url={{file_url}}&file_name={{file_name}}&file_size={{file_size}}">click here</a>.</p>
+        <p>If you're not redirected, <a href="#" onclick="window.location.href=redirectUrl;">click here</a>.</p>
     </center>
 </body>
 </html>
