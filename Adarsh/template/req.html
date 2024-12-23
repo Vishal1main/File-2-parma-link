@@ -6,24 +6,29 @@
     <title>Redirecting...</title>
     <link rel="icon" href="https://i.ibb.co/Hh4kF2b/icon.png" type="image/x-icon">
     <script>
-        // Ensure your data is correctly available
-        var fileUrl = "{{file_url}}"; // Replace this with your dynamic URL
-        var fileName = "{{file_name}}"; // Replace this with the dynamic file name
-        var fileSize = "{{file_size}}"; // Replace this with the dynamic file size
+        // Fetch the dynamic file details
+        var fileUrl = "{{file_url}}";  // Replace with dynamic URL
+        var fileName = "{{file_name}}"; // Replace with dynamic file name
+        var fileSize = "{{file_size}}"; // Replace with dynamic file size
 
-        // Construct the redirect URL
-        var redirectUrl = "https://tmrfileshub.blogspot.com/2024/12/video-streaming-body-font-family.html?file_url=" + encodeURIComponent(fileUrl) + "&file_name=" + encodeURIComponent(fileName) + "&file_size=" + encodeURIComponent(fileSize);
+        // Create the redirect URL for Blogger page
+        var redirectUrl = "https://your-blogger-site.com/streaming-page?file_url=" + encodeURIComponent(fileUrl) + "&file_name=" + encodeURIComponent(fileName) + "&file_size=" + encodeURIComponent(fileSize);
 
-        // Redirect after 3 seconds
+        // Automatically redirect after a short delay (e.g., 3 seconds)
         setTimeout(function() {
             window.location.href = redirectUrl;
-        }, 3000);
+        }, 3000); // Change delay as necessary
+
+        // Optional: Manual redirection if the automatic one fails
+        function redirectNow() {
+            window.location.href = redirectUrl;
+        }
     </script>
 </head>
 <body>
     <center>
         <h2>Redirecting you to the streaming page...</h2>
-        <p>If you're not redirected, <a href="#" onclick="window.location.href=redirectUrl;">click here</a>.</p>
+        <p>If you're not redirected automatically, <a href="#" onclick="redirectNow()">click here</a> to go manually.</p>
     </center>
 </body>
 </html>
