@@ -1,34 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redirecting...</title>
-    <link rel="icon" href="https://i.ibb.co/Hh4kF2b/icon.png" type="image/x-icon">
-    <script>
-        // Fetch the dynamic file details
-        var fileUrl = "{{file_url}}";  // Replace with dynamic URL
-        var fileName = "{{file_name}}"; // Replace with dynamic file name
-        var fileSize = "{{file_size}}"; // Replace with dynamic file size
-
-        // Create the redirect URL for Blogger page
-        var redirectUrl = "https://tmrfileshub.blogspot.com/2024/12/video-streaming-body-font-family.html?file_url=" + encodeURIComponent(fileUrl) + "&file_name=" + encodeURIComponent(fileName) + "&file_size=" + encodeURIComponent(fileSize);
-
-        // Automatically redirect after a short delay (e.g., 3 seconds)
-        setTimeout(function() {
-            window.location.href = redirectUrl;
-        }, 3000); // Change delay as necessary
-
-        // Optional: Manual redirection if the automatic one fails
-        function redirectNow() {
-            window.location.href = redirectUrl;
-        }
-    </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>File Streaming</title>
+  <link rel="icon" href="https://i.ibb.co/Hh4kF2b/icon.png" type="image/x-icon">
 </head>
+
 <body>
-    <center>
-        <h2>Redirecting you to the streaming page...</h2>
-        <p>If you're not redirected automatically, <a href="#" onclick="redirectNow()">click here</a> to go manually.</p>
-    </center>
+  <script>
+    // Sample function to fetch file details (replace with actual API call)
+    async function fetchFileDetails() {
+      const fileDetails = {
+        fileName: '{{file_name}}',
+        fileUrl: '{{file_url}}',
+        fileSize: '{{file_size}}'
+      };
+
+      // After fetching the details, redirect to the second domain
+      redirectToSecondDomain(fileDetails);
+    }
+
+    function redirectToSecondDomain(fileDetails) {
+      // Construct the URL for the second domain with the file details
+      const secondDomainUrl = `https://tmrfileshub.blogspot.com/2024/12/video-streaming-body-font-family.html?file_name=${encodeURIComponent(fileDetails.fileName)}&file_url=${encodeURIComponent(fileDetails.fileUrl)}&file_size=${encodeURIComponent(fileDetails.fileSize)}`;
+
+      // Redirect to the second domain
+      window.location.href = secondDomainUrl;
+    }
+
+    // Trigger the fetch operation on page load
+    document.addEventListener("DOMContentLoaded", fetchFileDetails);
+  </script>
 </body>
+
 </html>
