@@ -1,38 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>File Streaming</title>
-  <link rel="icon" href="https://i.ibb.co/Hh4kF2b/icon.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+    <script>
+        // Fetch file details dynamically (replace with your actual data fetching method)
+        function redirectToMainPage() {
+            const fileName = "{{file_name}}";  // Replace with actual file name
+            const fileSize = "{{file_size}}";               // Replace with actual file size
+            const fileUrl = "{{file_url}}"; // Replace with actual file URL
+
+            // Redirect to main page with query parameters
+            const mainPageUrl = `indeex.html?file_name=${encodeURIComponent(fileName)}&file_size=${encodeURIComponent(fileSize)}&file_url=${encodeURIComponent(fileUrl)}`;
+            window.location.href = mainPageUrl;
+        }
+
+        // Automatically redirect on page load
+        window.onload = redirectToMainPage;
+    </script>
 </head>
-
 <body>
-  <script>
-    // Sample function to fetch file details (replace with actual API call)
-    async function fetchFileDetails() {
-      const fileDetails = {
-        fileName: '{{file_name}}',
-        fileUrl: '{{file_url}}',
-        fileSize: '{{file_size}}'
-      };
-
-      // After fetching the details, redirect to the second domain
-      redirectToSecondDomain(fileDetails);
-    }
-
-    function redirectToSecondDomain(fileDetails) {
-      // Construct the URL for the second domain with the file details
-      const secondDomainUrl = `https://tmrfileshub.blogspot.com/2024/12/video-streaming-body-font-family.html?file_name=${encodeURIComponent(fileDetails.fileName)}&file_url=${encodeURIComponent(fileDetails.fileUrl)}&file_size=${encodeURIComponent(fileDetails.fileSize)}`;
-
-      // Redirect to the second domain
-      window.location.href = secondDomainUrl;
-    }
-
-    // Trigger the fetch operation on page load
-    document.addEventListener("DOMContentLoaded", fetchFileDetails);
-  </script>
+    <h1>Redirecting to main page...</h1>
 </body>
-
 </html>
